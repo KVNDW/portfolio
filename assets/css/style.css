@@ -1,0 +1,61 @@
+/* Color Scheme */
+:root {
+    --primary-color: #93b0d096;
+    --font-color: #333;
+    --font-color-hover: #737b8d;
+}
+
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Link */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Layout */
+header {
+    background: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex:1
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffffff;
+}
