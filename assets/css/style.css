@@ -62,7 +62,37 @@ footer {
     background: #ffffff;
 }
 
-.container {
+/* Container TODO unify containers */
+
+.info-container {
+    width: 85%;
+    min-height: 50vh; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 40px;
+    padding: 20px; 
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-container {
     width: 85%;
     min-height: 50vh; 
     background-color: white; 
@@ -72,29 +102,33 @@ footer {
     padding: 20px; 
     display: flex; 
 }
-
-.container1 {
-    width: 85%; 
-    min-height: 100vh; 
+.tech-container {
+    width: 85%;
+    min-height: 50vh; 
     background-color: white; 
     border-radius: 10px; 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
     margin-top: 40px;
     padding: 20px; 
-
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+}
+.contact-container {
+    width: 85%;
+    min-height: 50vh; 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 40px;
+    padding: 20px; 
+    display: flex; 
     
 }
 
-
-
-
-
 .projects-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -104,6 +138,7 @@ footer {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+    width: 100%;
 }
 
 .tech-grid {
