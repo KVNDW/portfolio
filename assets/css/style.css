@@ -121,15 +121,14 @@ footer {
     margin-top: 40px;
     padding: 20px; 
     display: flex; 
+    
 }
-
-
-
 
 .projects-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -139,6 +138,7 @@ footer {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+    width: 100%;
 }
 
 .tech-grid {
