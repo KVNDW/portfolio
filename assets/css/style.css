@@ -63,17 +63,20 @@ footer {
 
 /* Container TODO unify containers */
 
+/* Info containers */
 .info-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
     width: 90%;
-    min-height: 50vh; 
-    background-color: white; 
-    border-radius: 10px; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
-    padding: 20px; 
-    display: flex; 
+    padding: 20px;
     align-items: center;
-    flex-direction: row;
+    text-align: left;
 }
 
 .left {
@@ -81,17 +84,41 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    hyphens: auto;
 }
 
 .right {
     flex: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     flex-direction: column;
+    width: 95%;
+
+    text-align: justify;
+}
+
+.right h2 {
+    text-align: left;
+}
+
+.left img {
+    width: 70%;
+    height: auto;
+    display: block;
+    border-radius: 100%;
+    margin: 40px auto 10px;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
+
+/* Info containers end */
 .tech-container {
     width: 90%;
     min-height: 50vh; 
@@ -151,6 +178,7 @@ footer {
     padding: 20px;
     text-align: justify;
     border-radius: 5px;
+    transition: transform 0.5s ease;
 }
 
 .project h3 {
@@ -185,6 +213,12 @@ footer {
 .project button:hover {
     transform: translateY(-1px);
     background-color: #b7dcf1;
+}
+
+
+.project:hover {
+
+    transform: scale(1.02);
 }
 
 
