@@ -11,18 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
 
-                const info = document.querySelector('.right');
+            //Info Container
+            const info = document.querySelector('.right');
 
+            const titleText = document.createElement("h2");
+            titleText.textContent = data.infotitel;
 
-                const titleText = document.createElement("h2");
-                titleText.textContent = data.infotitel;
+            const text = document.createElement("div");
+            text.textContent = data.infotext;
 
-                const text = document.createElement("div");
-                text.textContent = data.infotext;
+            info.appendChild(titleText);
+            info.appendChild(text);
 
-
-                info.appendChild(titleText);
-                info.appendChild(text);
+            //Project Container
 
             const project1titel = document.createElement("h3")
             project1titel.textContent = data.projekttitel1;
