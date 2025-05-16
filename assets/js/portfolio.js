@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("assets/resources/files/data.json") 
+    fetch("assets/resources/files/data.json")
         .then(response => response.json())
         .then(data => {
             const info = document.querySelector('.right');
-        
+
 
             const titleText = document.createElement("h2");
-            titleText.textContent = data.infotitel; 
+            titleText.textContent = data.infotitel;
 
             const text = document.createElement("div");
-            text.textContent = data.infotext; 
+            text.textContent = data.infotext;
 
-            
+
             info.appendChild(titleText);
             info.appendChild(text);
         })
@@ -44,8 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const project1button = document.createElement("button");
             project1button.textContent = data.projektlink1;
-            project1button.onclick = () => window.open('assets/pages/project1.html', '_blank');
+            project1button.onclick = () => {
 
+                    window.open('assets/pages/project1.html?pdf=IP6', '_blank');
+
+            };
 
             project1.appendChild(project1titel);
             project1.appendChild(project1image);
