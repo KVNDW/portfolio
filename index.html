@@ -5,20 +5,24 @@
     <link rel="icon" sizes="32x32" href="assets/resources/logos/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Würsch Portfolio</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 <body>
 
-    <header> <Strong>Kevin Würsch Portfolio</Strong> </header>
+    <header>
+        <div class="header-container">
+            <Strong>Kevin Würsch Portfolio</Strong>
+        </div>
+    </header>
+
+
 
     <div class="main-section"> 
        
         <div class="info-container">
             
         <div class="left"> 
-            <img src="assets/resources/images/profile.png" alt="">
+            <img src="assets/resources/images/profile.jpg" alt="">
          </div>
          
         <div class="right"> </div>
@@ -28,11 +32,7 @@
 
         <div class="project-container">
             <div class="projects-grid">
-                <div class="project" id="project1">Project 1
-                    <div></div>
-                    <button> <a href="./assets/pages/project1.html" class="project-link">Project 1</a></button>
-                   
-                </div>
+                <div class="project" id="project1"></div>
                 <div class="project" id="project2">Project 2</div>
                 <div class="project" id="project3">Project 3</div>
                 <div class="project" id="project4">Project 4</div>
@@ -43,10 +43,22 @@
 
         <div class="tech-container"> 
             <div class="tech-grid">
-                <div class="tech">tech</div>
-                <div class="tech">tech2</div>
-                <div class="tech">techdd</div>
-                <div class="tech">tech 4</div>
+                <div class="tech">
+                    <img src="assets/resources/techLogos/css.png" alt="">
+                    <div> CSS</div>
+                </div>
+                <div class="tech">
+                    <img src="assets/resources/techLogos/css.png" alt="">
+                    <div> CSS</div>
+                </div>
+                <div class="tech">
+                    <img src="assets/resources/techLogos/css.png" alt="">
+                    <div> CSS</div>
+                </div>
+                <div class="tech">
+                    <img src="assets/resources/techLogos/css.png" alt="">
+                    <div> CSS</div>
+                </div>
                 <div class="tech">tech 5</div>
                 <div class="tech">tech 6</div>
                 <div class="tech">tech 1</div>
@@ -59,11 +71,42 @@
         </div> 
         
     
-        <div class="contact-container"> </div>
+        <div class="contact-container">
+
+            <h2>Contact</h2>
+
+
+            <div>
+                <a href="mailto:kevinw@gmx.ch">
+                    <img src="assets/resources/logos/mail.png" alt="Mail" class="icon">
+                   kevinw@gmx.ch
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.linkedin.com/in/kevin-w%C3%BCrsch-04a961229/" class="mail-link" target="_blank">
+                    <img src="assets/resources/logos/linkedIn.png" alt="LinkedIn" class="icon">
+                    Linkedin Kevin Würsch
+                </a>
+            </div>
+
+
+
+
+        </div>
 
     </div>
 
-    <footer> Footer </footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">© 2025 Kevin Würsch</div>
+            <div class="footer-right">
+                <a href="https://github.com/KVNDW/portfolio" target="_blank">
+                    <img src="assets/resources/logos/github.png" alt="Github" class="icon">
+                </a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 <script type="module" src="assets/js/portfolio.js"></script>

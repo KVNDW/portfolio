@@ -31,15 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("assets/resources/files/data.json") 
         .then(response => response.json())
         .then(data => {
-            
+
             const project1titel = document.createElement("h3")
-            project1titel.textContent = data.projekttitel1
+            project1titel.textContent = data.projekttitel1;
+
+            const project1image = document.createElement("img");
+            project1image.src = "assets/resources/images/ip6.png";
+            project1image.alt = "ip6";
 
             const project1text = document.createElement("div")
-            project1text.textContent = data.projektinfo1
+            project1text.textContent = data.projektinfo1;
+
+            const project1button = document.createElement("button");
+            project1button.textContent = data.projektlink1;
+            project1button.onclick = () => window.open('assets/pages/project1.html', '_blank');
+
 
             project1.appendChild(project1titel);
+            project1.appendChild(project1image);
             project1.appendChild(project1text);
+            project1.appendChild(project1button);
 
             ////////////////////////////////////////////
 
@@ -97,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             project6.appendChild(project6text);
 
             ////////////////////////////////////////////
-            
+
         })
         .catch(error => console.error("Error loading JSON:", error));
 });
