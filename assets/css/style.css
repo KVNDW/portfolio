@@ -44,8 +44,25 @@ a:hover {
 /* Layout */
 header {
     background: #ffffff;
-    padding: 20px;
-    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    width: 90%;
+
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .main-section {
@@ -61,8 +78,38 @@ header {
 footer {
     text-align: center;
     margin-top: 40px;
-    padding: 10px;
     background: #ffffff;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer-container {
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.footer-right{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-container img {
+    width: 30px;
 }
 
 
@@ -142,7 +189,7 @@ footer {
 
 .tech-grid {
     display: grid;
-    gap: 15px;
+    gap: 5px;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -212,12 +259,19 @@ footer {
     margin-top: 15px;
     color: var(--font-color);
     font-weight: bold;
-    transition: color 0.3s;
+    transition: transform 0.3s;
 
     display: flex;
     align-items: center;
 
     gap: 10px;
+}
+
+
+.contact-container a:hover {
+    transform: scale(1.02);
+
+
 }
 
 /* Project work */
@@ -252,6 +306,8 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
+
+
 }
 
 @media (min-width: 900px) {
@@ -269,6 +325,14 @@ footer {
     .main-section {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .header-container {
+        width: 70%;
+    }
+
+    .footer-container {
+        width: 70%;
     }
 
 }
