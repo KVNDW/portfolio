@@ -1,24 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("assets/resources/files/data.json")
-        .then(response => response.json())
-        .then(data => {
-            const info = document.querySelector('.right');
-
-
-            const titleText = document.createElement("h2");
-            titleText.textContent = data.infotitel;
-
-            const text = document.createElement("div");
-            text.textContent = data.infotext;
-
-
-            info.appendChild(titleText);
-            info.appendChild(text);
-        })
-        .catch(error => console.error("Error loading JSON:", error));
-});
-
-
 const project1 = document.getElementById('project1');
 const project2 = document.getElementById('project2');
 const project3 = document.getElementById('project3');
@@ -28,9 +7,22 @@ const project6 = document.getElementById('project6');
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("assets/resources/files/data.json") 
+    fetch("assets/resources/files/data.json")
         .then(response => response.json())
         .then(data => {
+
+                const info = document.querySelector('.right');
+
+
+                const titleText = document.createElement("h2");
+                titleText.textContent = data.infotitel;
+
+                const text = document.createElement("div");
+                text.textContent = data.infotext;
+
+
+                info.appendChild(titleText);
+                info.appendChild(text);
 
             const project1titel = document.createElement("h3")
             project1titel.textContent = data.projekttitel1;
