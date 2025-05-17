@@ -356,6 +356,9 @@ footer {
 
 .project {
     background-color: #5ba7f1;
+    /*background-color: #348bb1;*/
+
+
     color: white;
     padding: 20px;
     text-align: justify;
@@ -424,14 +427,11 @@ footer {
     padding: 20px;
     display: flex;
     overflow: hidden;
-
 }
-
 
 .page-container iframe {
     width: 100%;
-    min-height: 124vh;
-
+    min-height: 120vh;
 }
 
 /* Page end */
