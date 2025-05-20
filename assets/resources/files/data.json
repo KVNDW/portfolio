@@ -1,23 +1,28 @@
 {
-    "infotitel": "Über Mich",
-    "infotext": "Bachelor-Absolvent in Informatik mit Erfahrung in Softwareentwicklung, Web-Technologien und Systemhosting. Praktische Kenntnisse in JavaScript, Python, Docker, NGINX sowie Projekterfahrung in den Bereichen Datenvisualisierung, Machine Learning und VR-/Game-Development.\nIch suche ein Unternehmen, in dem ich moderne IT-Lösungen mitgestalten und meine Fähigkeiten weiter ausbauen kann. Dabei arbeite ich gerne an vielfältigen Projekten mit unterschiedlichen Bereichen. Besonders schätze ich Projekte, bei denen ich von A bis Z mitarbeiten kann und das grosse Ganze im sehe.\n",
-    "projekttitel1": "IP6 Bachelor",
-    "projektinfo1": "Unsere Bachelor Arbeit die VR Hyperloop Experience ist eine immersive 3D-Visualisierung, die das Konzept der Hyperloop-Reisen hautnah erlebbar macht. Mit einer VR-Brille tauchen Nutzer in eine virtuelle Fahrt ein, erkunden die Kapsel interaktiv und bekommen ein Gefühl für hyperloop.",
+    "infotitel": "Über mich",
+    "infotext": "Bachelor-Absolvent in Informatik mit Erfahrung in Softwareentwicklung, Web-Technologien und Systemhosting. Praktische Kenntnisse in JavaScript, Python, Docker und NGINX sowie Projekterfahrung in den Bereichen Datenvisualisierung, Machine-Learning und VR-/Game-Development.\nIch suche ein Unternehmen, in dem ich moderne IT-Lösungen aktiv mitgestalten und meine Fähigkeiten weiter ausbauen kann. Dabei arbeite ich gerne an vielfältigen Projekten mit unterschiedlichen Bereichen. Besonders schätze ich Projekte, bei denen ich von A bis Z mitarbeiten kann und das grosse Ganze sehe.\n",
 
-    "projektlink1": "View Project",
-    "projekttitel2": "IP6 Bachelor",
-    "projektinfo2": "Wir entwickelten eine interaktve VR-Simulaton, die Nutzer an das Hyperloop-Erlebnis heranführt, wertvolles Feedback sammelt und so zur Weiterentwicklung und Akzeptanz beiträgt. ",
-    "projektlink2": "klicke hier zum öffnen",
-    "projekttite3": "IP6 Bachelor",
-    "projektinfo3": "Wir entwickelten eine interaktve VefffffffffffffffffffffffffffffffffR-Simulaton, die Nutzer an das Hyperloop-Erlebnis heranführt, wertvolles Feedback sammelt und so zur Weiterentwicklung und Akzeptanz beiträgt. ",
-    "projektlink3": "klicke hier zum öffnen",
-    "projekttitel4": "IP6 Bachelor",
-    "projektinfo4": "Wir entwickelten eine interaktve VR-Simulaton, die Nutzer an das Hyperloop-Erlebnis heranführt, wertvolles Feedback sammelt und so zur Weiterentwicklung und Akzeptanz beiträgt. ",
-    "projektlink4": "klicke hier zum öffnen",
-    "projekttitel5": "IP6 Bachelor",
-    "projektinfo5": "Wir entwickelten eine interaktve VR-Simulaton, die Nutzer an das Hyperloop-Erlebnis heranführt, wertvolles Feedback sammelt und so zur Weiterentwicklung und Akzeptanz beiträgt. ",
-    "projektlink5": "klicke hier zum öffnen",
+    "projekttitel1": "Bachelorarbeit Eurotube",
+    "projektinfo1": "Die VR Hyperloop Experience ist eine immersive 3D-Visualisierung, die das Konzept der Hyperloop-Reisen hautnah erlebbar macht.\nMit einer VR-Brille tauchen die Nutzer:innen direkt in einen Hyperloop-Bahnhof ein, steigen in eine Kapsel und erleben die Fahrt realitätsnah mit.\nDadurch wird das Konzept greifbarer, und man erhält wertvolles Feedback zur Wirkung und Verständlichkeit der Idee.\n",
+    "projektlink1": "Projekt öffnen",
+
+    "projekttitel2": "Sintratec Customer-Portal",
+    "projektinfo2": "Das Sintratec Kundenportal wurde vollständig überarbeitet, da die bestehende Plattform technisch veraltet und schwer wartbar war.\nAuf Basis der alten Lösung wurde eine neue Version umgesetzt, die ohne Datenverlust auf einem eigenen Webserver neu gehostet wurde.\nDas Resultat ist eine moderne Benutzeroberfläche mit verbesserter Nutzererfahrung und optimierter Pflegebarkeit für das Support-Team.",
+    "projektlink2": "Projekt öffnen",
+
+    "projekttitel3": "NextFrame Photography",
+    "projektinfo3": "Nextframe ist eine selbst gehostete Fotografie-Website, die mir als persönliche Plattform für meine Arbeiten dient.\nDie Seite zeigt verschiedene Fotokategorien, bietet eine Kontaktseite und läuft komplett in einem Docker-Container auf einer Oracle-Instanz.\nDadurch kann ich die gesamte Umgebung – vom WordPress-Backend bis zum Ubuntu-Server – flexibel verwalten und anpassen.\n",
+    "projektlink3": "Projekt öffnen",
+
+    "projekttitel4": "Sustainability Navigator",
+    "projektinfo4": "Der Sustainability Navigator ist eine digitale Plattform, die Nachhaltigkeitsprojekte und -kompetenzen an der FHNW sichtbar macht.\nSie wurde von Grund auf mit Angular, Node.js und Sequelize entwickelt und unterstützt den Austausch zwischen Forschenden und Dozierenden.\nZiel war es, bestehendes Engagement besser zugänglich zu machen und gezielte Zusammenarbeit im Bereich Sustainability zu fördern.",
+    "projektlink4": "Projekt öffnen",
+
+    "projekttitel5": "Ski Instructor Booking App",
+    "projektinfo5": "Die Ski Instructor Booking App ist eine mobile Buchungsplattform für die Skilehrer:innen in Gstaad, die den bisherigen Papierprozess ersetzt.\nSie ermöglicht Terminplanung und Stundenverwaltung direkt vom Skilift aus und sorgt so für eine deutlich effizientere Organisation.\nUmgesetzt wurde die Lösung mit Angular und Node.js – speziell optimiert für mobile Nutzung und Bedienbarkeit mit „kalten Fingern“.\n",
+    "projektlink5": "Projekt öffnen",
+
     "projekttitel6": "IP6 Bachelor",
-    "projektinfo6": "Wir entwickelten eine interaktve VR-Simulaton, die Nutzer an das Hyperloop-Erlebnis heranführt, wertvolles Feedback sammelt und so zur Weiterentwicklung und Akzeptanz beiträgt. ",
-    "projektlink6": "klicke hier zum öffnen"
+    "projektinfo6": "Das Intune-Management der Firma wurde vollständig überarbeitet, da Softwareverteilung und Geräteüberwachung zuvor nur teilweise umgesetzt waren.\nNeu können Anwendungen zentral hochgeladen, gezielt verteilt und auftretende Probleme automatisch erkannt und remote behoben werden.\nDies reduziert den Supportaufwand deutlich und ermöglicht es der IT (damals ich selbst), Software mit minimalem Aufwand an alle Mitarbeitenden auszurollen.\n",
+    "projektlink6": "Projekt öffnen"
 }
