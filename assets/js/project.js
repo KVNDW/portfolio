@@ -6,5 +6,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pdfFrame = document.getElementById("pdf-frame");
 
-    pdfFrame.src = `../resources/files/${pdfName}.pdf#zoom=20`;
+    pdfFrame.src = `../resources/files/${pdfName}.pdf#zoom=100`;
 });
