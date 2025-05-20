@@ -462,7 +462,17 @@ footer {
 
 .page-container iframe {
     width: 100%;
-    min-height: 120vh;
+    height: 85vh;
+    border: none;
+    max-height: 100%;
 }
+
+
+@media (max-width: 500px) {
+    .page-container iframe {
+        height: 70vh;
+    }
+}
+
 
 /* Page end */
