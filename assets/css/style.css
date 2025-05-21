@@ -407,7 +407,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 #pdf-frame {
@@ -415,7 +414,6 @@ footer {
     height: 95%;
     border: none;
     border-radius: 10px;
-    border: 1px solid red;
 }
 
 #pdf-img {
