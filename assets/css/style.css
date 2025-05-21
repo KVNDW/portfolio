@@ -447,7 +447,7 @@ footer {
     width: 100%;
     margin: 40px auto;
     aspect-ratio: 1 / 1.4142;
-    max-height: 125vh;
+    max-height: 124vh;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -459,7 +459,7 @@ iframe {
     height: 100%;
     border: none;
     border-radius: 10px;
-    max-height: 125vh;
+    max-height: 124vh;
 }
 
 
