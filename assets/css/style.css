@@ -423,7 +423,6 @@ footer {
     .info-container {
         grid-template-columns: 1fr;
     }
-
     /*Switch from iframe to img when space is to small*/
     #pdf-frame {
         display: none;
@@ -437,11 +436,4 @@ footer {
         object-fit: contain;
         display: block;
     }
-}
-
-@media (max-width: 1024px) {
-    .page-container {
-        max-height: 90vh;
-    }
-
 }
