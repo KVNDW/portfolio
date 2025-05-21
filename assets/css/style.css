@@ -448,7 +448,7 @@ footer {
     margin-top: 40px;
     aspect-ratio: 1 / 1.4142;
     max-height: 124vh;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -464,7 +464,6 @@ footer {
     height: 95%;
     border: none;
     border-radius: 10px;
-    max-height: 124vh;
 }
 
 #pdf-img {
@@ -482,7 +481,7 @@ footer {
 
     #pdf-img {
         max-width: 100%;
-        max-height: 90vh;
+        max-height: 100vh;
         height: auto;
         width: auto;
         object-fit: contain;
