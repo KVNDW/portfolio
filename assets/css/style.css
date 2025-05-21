@@ -447,7 +447,7 @@ footer {
     width: 100%;
     margin-top: 40px;
     aspect-ratio: 1 / 1.4142;
-    /*max-height: 124vh;*/
+    max-height: 124vh;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
@@ -456,10 +456,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    height: auto;
-    max-height: 100vh;
 }
 
 
