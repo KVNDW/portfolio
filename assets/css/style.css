@@ -1,10 +1,10 @@
-@import url("mainPage.css");
-@import url("additionalPage.css");
-
 :root {
     --primary-color: #93b0d096;
     --font-color: #333;
-    --font-color-hover: #737b8d;
+    --font-color-hover: #545b68;
+    --tile-color:white;
+    --project-color: #6299cd;
+    --project-button-hover-color: #b7dcf1;
 }
 
 /* Basic Setup */
@@ -25,13 +25,12 @@
 html {
     font-size: 15px;
     scroll-behavior: smooth;
-    background-color: white;
+    background-color: var(--tile-color);
 }
 
 body {
     font-family: Arial, sans-serif;
-    /*background-color: var(--primary-color);*/
-    background-color: white;
+    background-color: var(--tile-color);
     color: var(--font-color);
     line-height: 1.6;
     padding: 0;
@@ -42,19 +41,12 @@ body {
 
 /* Link */
 a {
-    color: #007bff;
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #0056b3;
 }
 
 /* Layout */
 header {
     background: #ffffff;
-
     padding-top: calc(20px + env(safe-area-inset-top));
     padding-bottom: 20px;
     padding-left: 15px;
@@ -74,13 +66,10 @@ header a {
 header a:hover {
     color: var(--font-color);
 }
-
 .header-container {
     width: 90%;
-
     display: flex;
     justify-content: flex-start;
-
 }
 
 .main-section {
@@ -96,12 +85,9 @@ header a:hover {
 footer {
     text-align: center;
     margin-top: 40px;
-    background: #ffffff;
+    background-color: var(--tile-color);
 
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 8px 15px;
     font-size: 15px;
 
     display: flex;
@@ -110,22 +96,17 @@ footer {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .footer-container {
     width: 90%;
-
     display: flex;
     align-items: center;
-
     justify-content: space-between;
 }
 
 .footer-right{
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .footer-container img {
@@ -134,17 +115,14 @@ footer {
     align-items: center;
 }
 
-
-/* Container TODO unify containers */
-
-/* Info containers */
+/* Info container */
 .info-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     width: 100%;
     min-height: 40vh;
-    background-color: white;
+    background-color: var(--tile-color);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
@@ -165,8 +143,6 @@ footer {
     flex: 2;
     display: flex;
     justify-content: center;
-
-
     flex-direction: column;
     width: 95%;
 
@@ -186,15 +162,11 @@ footer {
     margin: 40px auto 10px;
 }
 
-
-
-/* Info containers end */
-
-/* tech containers*/
+/* Tech containers*/
 .tech-container {
     width: 100%;
 
-    background-color: white;
+    background-color: var(--tile-color);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
@@ -203,8 +175,6 @@ footer {
     font-size: 14px;
     line-height: 1.4;
 
-
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -222,8 +192,7 @@ footer {
 .tech {
     transition: transform 0.5s;
     height: 100%;
-    background-color: #ffffff;
-    color: white;
+    background-color: var(--tile-color);
 
     text-align: center;
     border-radius: 5px;
@@ -236,15 +205,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 .tech:hover {
-
     transform: scale(1.05);
 }
-
-
 
 .tech img {
     width: 35px;
@@ -253,10 +218,7 @@ footer {
     border-radius: 5px;
     margin: 0 auto 10px;
 
-
-
 }
-
 
 .tech-title {
     font-size: 24px;
@@ -265,12 +227,12 @@ footer {
     color: var(--font-color);
 }
 
-/* tech containers end */
+/* Contact container */
 
 .contact-container {
     width: 100%;
     min-height: 15vh;
-    background-color: white;
+    background-color: var(--tile-color);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
@@ -279,14 +241,15 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: left;
-    acolor: black;
 }
 
 .contact-container img {
     width: 30px
 }
 
-
+.contact-container a:hover img {
+    opacity: 0.7;
+}
 
 .contact-container a {
 
@@ -301,18 +264,16 @@ footer {
     gap: 10px;
 }
 
-
 .contact-container a:hover {
     transform: scale(1.02);
-
-
+    color: var(--font-color-hover);
 }
 
-/* Project work */
+/* Project container */
 .project-container {
     width: 100%;
     min-height: 50vh;
-    background-color: white;
+    background-color: var(--tile-color);
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     margin-top: 40px;
@@ -332,11 +293,11 @@ footer {
     grid-template-columns: 2fr;
 }
 
+/*Media queries*/
 @media (min-width: 630px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .tech-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -344,8 +305,6 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-
-
 }
 
 @media (min-width: 900px) {
@@ -381,20 +340,19 @@ footer {
 }
 
 .project {
-    background-color: #6299cd;
-
-    /*background-color: #5ba7f1;*/
+    background-color: var(--project-color);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    color: white;
+    color: var(--tile-color);
     padding: 20px;
     text-align: left;
     border-radius: 5px;
     transition: transform 0.5s ease;
     min-height: 320px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
@@ -413,7 +371,7 @@ footer {
 .project button {
     font-family: Arial, sans-serif;
     color: var(--font-color);
-    background-color: white;
+    background-color: var(--tile-color);
 
     border-radius: 4px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -428,36 +386,28 @@ footer {
 
 .project button:hover {
     transform: translateY(-1px);
-    background-color: #b7dcf1;
+    background-color: var(--project-button-hover-color);
+
 }
 
-
 .project:hover {
-
     transform: scale(1.02);
 }
 
-
-/* Project work end */
-
-
-
-/* Page */
+/* Page container */
 .page-container {
     width: 100%;
     margin-top: 40px;
     aspect-ratio: 1 / 1.4142;
     max-height: 124vh;
-    background-color: #ffffff;
+    background-color: var(--tile-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 #pdf-frame {
     width: 95%;
@@ -474,7 +424,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
+    /*Switch from iframe to img when space is to small*/
     #pdf-frame {
         display: none;
     }
@@ -486,13 +436,5 @@ footer {
         width: auto;
         object-fit: contain;
         display: block;
-        margin: 0 auto;
     }
 }
-
-
-
-
-
-
-/* Page end */

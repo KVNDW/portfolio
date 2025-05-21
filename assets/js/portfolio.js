@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             const projectButton = document.createElement("button");
                             projectButton.textContent = data[`projektlink${index + 1}`];
                             projectButton.onclick = () => {
-                                    window.open(`assets/pages/project1.html?pdf=P${index + 1}`, '_blank');
+                                    window.open(`assets/pages/projects.html?pdf=P${index + 1}`, '_blank');
                             };
 
                             // Append Elements to Project Container
