@@ -399,7 +399,7 @@ footer {
     width: 100%;
     margin-top: 40px;
     aspect-ratio: 1 / 1.4142;
-    max-height: 124vh;
+    max-height: 80vh;
     background-color: var(--tile-color);
     border-radius: 10px;
     overflow: hidden;
