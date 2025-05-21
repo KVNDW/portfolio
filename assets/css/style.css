@@ -407,7 +407,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 #pdf-frame {
@@ -430,12 +429,6 @@ footer {
     }
 
     #pdf-img {
-        max-width: 100%;
-        max-height: 100vh;
-        height: auto;
-        width: auto;
-        object-fit: contain;
-        display: block;
-        margin: 0 auto;
+
     }
 }
