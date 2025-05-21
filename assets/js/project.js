@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const pdfName = urlParameter.get('pdf');
 
     const pdfFrame = document.getElementById("pdf-frame");
+    const pdfImg = document.getElementById("pdf-img");
 
-    pdfFrame.src = `../resources/files/${pdfName}.pdf#zoom=100`;
+
+
+    pdfImg.src = `../resources/files/${pdfName}.jpg`;
+
+    pdfFrame.src = `../resources/files/${pdfName}.pdf#zoom=90`;
 });
