@@ -344,7 +344,7 @@ footer {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     color: var(--tile-color);
     padding: 20px;
@@ -368,6 +368,10 @@ footer {
     margin: 0 auto 10px;
 }
 
+.project-text{
+    margin-bottom: 20px
+}
+
 .project button {
     font-family: Arial, sans-serif;
     color: var(--font-color);
@@ -381,7 +385,8 @@ footer {
     cursor: pointer;
     transition: transform 0.2s ease;
     display: block;
-    margin: 10px auto 0;
+    margin-top: auto;
+    align-self: center;
 }
 
 .project button:hover {

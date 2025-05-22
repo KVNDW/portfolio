@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             projectTitle.textContent = data[`projekttitel${index + 1}`];
 
                             const projectText = document.createElement("div");
+                            projectText.className = "project-text";
                             projectText.textContent = data[`projektinfo${index + 1}`];
 
                             const projectImage = document.createElement("img");
